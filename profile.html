@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="card p-3 py-4">
+        <div class="text-center">
+            <img src="data:image/png;base64,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" alt="Profile Image" width="100" class="rounded-circle">
+        </div>
+        <div class="text-center mt-3">
+            <h5 class="mt-2 mb-0" id="userName">User Name</h5>
+            <span id="userEmail">User Email</span>
+            <div class="buttons">
+                <button class="btn btn-outline-primary px-4" id="verify-button">Verify Email</button>
+                <button class="btn btn-primary px-4 ms-3" id="signOut">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script> -->
+    <!-- Firebase Auth SDK -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script> -->
+    <!-- SweetAlert2 for alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="module">
+        // Import Firebase functions
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, onAuthStateChanged, sendEmailVerification , signOut  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDomQ80LkmAO7UKxYOskFdNjq6jzRwLJk4",
+            authDomain: "authentication-app-14ee1.firebaseapp.com",
+            projectId: "authentication-app-14ee1",
+            storageBucket: "authentication-app-14ee1.appspot.com",
+            messagingSenderId: "966385118735",
+            appId: "1:966385118735:web:40dcfffb25b67f06b37d7a",
+            measurementId: "G-708HSBDYHB"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Retrieve query parameter for email
+        const urlParams = new URLSearchParams(window.location.search);
+        const userEmail = urlParams.get('email');
+
+        // Display the user's email
+        document.getElementById('userEmail').innerText = userEmail;
+
+        // Display the user's name and email after authentication state change
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                document.getElementById('userName').innerText = user.displayName || "User";
+                document.getElementById('userEmail').innerText = user.email;
+            } else {
+                window.location.href = "index.html";
+            }
+        });
+
+        // Add event listener to the verify email button
+        const checkEmailVerified = async () => {
+            const user = auth.currentUser;
+            if (user) {
+                await user.reload();
+                if (user.emailVerified) {
+                    Swal.fire("Success", "Your email is verified!", "success");
+                } else {
+                    Swal.fire("Warning", "Your email is not verified yet. Please check your inbox.", "warning");
+                }
+            }
+        };
+
+        // Add event listener to the verify email button
+        document.getElementById('verify-button').addEventListener('click', () => {
+            const user = auth.currentUser;
+           if (user.emailVerified) {
+                    Swal.fire("Your email is already verified.") }
+                    else{
+                sendEmailVerification(user).then(() => {
+                    Swal.fire("Verification email sent!");
+                    setTimeout(checkEmailVerified, 5000); // Check after 5 seconds if email is verified
+                }).catch((error) => {
+                    if (error.code === 'auth/too-many-requests') {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Too Many Requests",
+                            text: "You have made too many requests in a short period. Please try again later.",
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: error.message,
+                        });
+                    }
+                });
+            }
+        });
+
+        document.getElementById('signOut').addEventListener('click', () => {
+            const auth = getAuth();
+signOut(auth).then(() => {
+    setTimeout( window.location.href = "index.html", 5000)
+}).catch((error) => {
+    Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: error.message,
+                        });
+});
+        })
+
+    </script>
+</body>
+
+</html>
